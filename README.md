@@ -14,10 +14,10 @@ A compact, reproducible simulation of decentralized peer-to-peer learning implem
 
 ## Quick start (project root)
 1. Install dependencies:
-   pip install torch torchvision numpy matplotlib networkx
+   `pip install torch torchvision numpy matplotlib networkx`
 
 2. Run a short demo:
-   python3 balance_with_metrics.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed 2025
+   `python my_awesome_app/balance_algo.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed`
 
 3. See outputs in a timestamped folder under `results/`.
 
@@ -74,10 +74,10 @@ results/<timestamp>_<RUNNAME>/ contains:
 ---
 
 ## Example (short demo)
-python3 balance_with_metrics.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed 2025
+`python3 balance_with_metrics.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed`
 
 Console output example (illustrative):
-Round 1/10 - Max.TER=0.8450 Max.ASR=0.0125 Consensus=26.5234 AvgBenign=0.1550
+`Round 1/10 - Max.TER=0.8450 Max.ASR=0.0125 Consensus=26.5234 AvgBenign=0.1550`
 
 ---
 
@@ -89,41 +89,6 @@ Round 1/10 - Max.TER=0.8450 Max.ASR=0.0125 Consensus=26.5234 AvgBenign=0.1550
 
 ---
 
-## Privacy & repository policy (important)
-- Only push code, documentation and small safe examples to GitHub.
-- Do NOT commit datasets, results, models, logs, or credentials.
-- This repo's `.gitignore` is configured to ignore: `data/`, `results/`, `models/`, `checkpoints/`, `*.csv`, `*.pth`, `*.pt`, `*.pkl`, `.env`, credential files, logs, notebooks, and common binary formats.
-- If sensitive files were accidentally committed, remove them with `git rm --cached <path>` and purge history with `git filter-repo` or BFG before pushing.
-
-Safe push checklist (run in project root `/home/priyanka/flwr_app/my-awesome-app`):
-1. Configure identity (if not set here):
-   git config user.email "you@example.com"
-   git config user.name "Your Name"
-
-2. Initialize and preview:
-   git init
-   git add --all --dry-run
-
-3. Commit .gitignore and essential files first:
-   git add .gitignore README.md balance_with_metrics.py
-   git commit -m "chore: add .gitignore and initial files"
-
-4. Verify ignored files:
-   git status --ignored
-   git check-ignore -v path/to/suspect.file
-
-5. Finalize and push:
-   git add -A
-   git commit -m "chore: initial commit"
-   git branch -M main
-   git remote add origin https://github.com/<USERNAME>/<REPO>.git
-   git push -u origin main
-
-Or use GitHub CLI:
-   gh auth login
-   gh repo create <REPO> --public --source=. --remote=origin --push
-
----
 
 ## Dependencies
 - Python 3.8+
