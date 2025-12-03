@@ -14,12 +14,13 @@ A compact, reproducible simulation of decentralized peer-to-peer learning implem
 
 ## Quick start (project root)
 1. Install dependencies:
-   `pip install torch torchvision numpy matplotlib networkx`
+  - `pip install torch torchvision numpy matplotlib networkx`
 
 2. Run a short demo:
-   `python my_awesome_app/balance_algo.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed`
+  - `python my_awesome_app/balance_algo.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed`
 
-3. See outputs in a timestamped folder under `results/`.
+3. See outputs in a timestamped folder under 
+  - `results/`.
 
 ---
 
@@ -77,7 +78,7 @@ results/<timestamp>_<RUNNAME>/ contains:
 `python3 balance_with_metrics.py --num_clients 6 --rounds 10 --malicious 1 --attack sign_flip --agg balance --seed`
 
 Console output example (illustrative):
-`Round 1/10 - Max.TER=0.8450 Max.ASR=0.0125 Consensus=26.5234 AvgBenign=0.1550`
+- `Round 1/10 - Max.TER=0.8450 Max.ASR=0.0125 Consensus=26.5234 AvgBenign=0.1550`
 
 ---
 
